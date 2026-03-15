@@ -1,0 +1,224 @@
+<svg width="100%" viewBox="0 0 680 690" xmlns="http://www.w3.org/2000/svg">
+
+  <!--
+    CENTER = (340,340)  viewBox 680×680
+
+    LAYER RADII (from image proportions):
+      outer guide ring  r=248
+      inner guide ring  r=228
+      disc-1 (darkest)  r=220
+      disc-2            r=196
+      disc-3            r=168
+      disc-4            r=136
+      core red          r=74
+      shadow ellipse    below center, rx=58 ry=20
+
+    CARDINAL SPIKES:
+      N / S — tall thin triangles, tip reach r=268, half-base=14 at r=150
+      E / W — wide flat gold diamonds, tip reach r=272, half-base=20 at center
+
+    DIAGONAL SPIKES (NE, NW, SE, SW):
+      two-tone triangles, reach r=236 at 45°
+      Bright right-face + dark left-face
+      half-base=11 perpendicular at disc edge r=150
+
+    KNOBS — 8 small diamonds (rotated squares) at r=196
+      one between each spike, size ≈ 18×18, dark olive #5a5020
+
+    All 45° diagonal coordinates use offset = r/√2
+  -->
+
+  <!-- ── App background ──────────────────────────────────────── -->
+  <rect width="680" height="680" rx="140" fill="#191714" style="fill:rgb(25, 23, 20);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ── Guide rings (thin, faint grey) ─────────────────────── -->
+  <circle cx="340" cy="340" r="248" fill="none" stroke="#888880" stroke-width="0.8" opacity="0.22" style="fill:none;stroke:rgb(136, 136, 128);color:rgb(255, 255, 255);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.22;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="340" r="228" fill="none" stroke="#888880" stroke-width="0.8" opacity="0.15" style="fill:none;stroke:rgb(136, 136, 128);color:rgb(255, 255, 255);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ── Concentric dark discs ───────────────────────────────── -->
+  <circle cx="340" cy="340" r="220" fill="#1c1410" style="fill:rgb(28, 20, 16);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="340" r="196" fill="#231710" style="fill:rgb(35, 23, 16);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="340" r="168" fill="#2e1c12" style="fill:rgb(46, 28, 18);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="340" r="136" fill="#3c2216" style="fill:rgb(60, 34, 22);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ── Shadow ellipse inside disc (bottom-center) ──────────── -->
+  <ellipse cx="340" cy="378" rx="68" ry="22" fill="#120c08" opacity="0.7" style="fill:rgb(18, 12, 8);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       SPIKES — drawn before knobs so knobs sit on top
+       ══════════════════════════════════════════════════════ -->
+
+  <!--
+    N SPIKE — tip=(340,72), base straddles center at y≈190
+    Left edge: (326,190) → tip(340,72)
+    Right edge: (354,190) → tip(340,72)
+    Two-tone: left face darker, right face bright gold
+  -->
+  <!-- N spike dark left face -->
+  <polygon points="340,72  326,190  340,172" fill="#c85020" style="fill:rgb(200, 80, 32);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- N spike bright right face -->
+  <polygon points="340,72  354,190  340,172" fill="#e8a030" style="fill:rgb(232, 160, 48);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!--
+    S SPIKE — tip=(340,608), mirror of N
+  -->
+  <!-- S spike dark left face (which is now right side visually) -->
+  <polygon points="340,608  354,490  340,508" fill="#c85020" style="fill:rgb(200, 80, 32);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- S spike bright right face -->
+  <polygon points="340,608  326,490  340,508" fill="#e8622a" style="fill:rgb(232, 98, 42);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!--
+    W SPIKE — wide flat gold diamond
+    tip=(108,340), right-tip=(340,340) — actually a wide flat shape
+    The E/W spikes are WIDE flat elongated diamonds, not thin
+    Looking at image: W spike is wide, tips at x≈108, inner at x≈240
+    top edge y≈320, bottom edge y≈360
+  -->
+  <!-- W spike — flat wide diamond, gold -->
+  <polygon points="108,340  240,320  296,340  240,360" fill="#c8981c" style="fill:rgb(200, 152, 28);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- bright upper face -->
+  <polygon points="108,340  240,320  296,340" fill="#e0b030" opacity="0.85" style="fill:rgb(224, 176, 48);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!--
+    E SPIKE — mirror of W
+    tip=(572,340), inner at x=384
+  -->
+  <!-- E spike — flat wide diamond, gold -->
+  <polygon points="572,340  440,320  384,340  440,360" fill="#c8981c" style="fill:rgb(200, 152, 28);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- bright upper face -->
+  <polygon points="572,340  440,320  384,340" fill="#e0b030" opacity="0.85" style="fill:rgb(224, 176, 48);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!--
+    DIAGONAL SPIKES — all reach r=236 at 45°
+    236/√2 = 166.9 → tip offset ≈ 167 from center
+    NE tip = (340+167, 340-167) = (507, 173)
+    NW tip = (340-167, 340-167) = (173, 173)
+    SE tip = (340+167, 340+167) = (507, 507)
+    SW tip = (340-167, 340+167) = (173, 507)
+
+    Base at disc edge r≈150, half-width=11 perpendicular to spike axis
+    For NE axis direction = (1,-1)/√2, perp = (1,1)/√2
+    Base wings at r=150 from center along NE, ±11 perp:
+      base-center along NE at 150: (340+106, 340-106) = (446, 234)
+      wing A: (446+8, 234+8) = (454, 242)
+      wing B: (446-8, 234-8) = (438, 226)
+  -->
+
+  <!-- NE spike dark face -->
+  <polygon points="507,173  438,226  452,240" fill="#b84018" style="fill:rgb(184, 64, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- NE spike bright face -->
+  <polygon points="507,173  454,242  452,240" fill="#e8622a" style="fill:rgb(232, 98, 42);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- NW spike: tip=(173,173)
+    base-center along NW at 150: (340-106, 340-106)=(234,234)
+    axis NW=(-1,-1)/√2, perp=(1,-1)/√2
+    wing A: (234+8, 234-8)=(242,226)
+    wing B: (234-8, 234+8)=(226,242)
+  -->
+  <!-- NW spike dark face -->
+  <polygon points="173,173  226,242  234,228" fill="#b84018" style="fill:rgb(184, 64, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- NW spike bright face -->
+  <polygon points="173,173  242,226  234,228" fill="#e8622a" style="fill:rgb(232, 98, 42);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- SE spike: tip=(507,507)
+    base-center along SE at 150: (446,446)
+    axis SE=(1,1)/√2, perp=(-1,1)/√2
+    wing A: (446-8, 446+8)=(438,454)
+    wing B: (446+8, 446-8)=(454,438)
+  -->
+  <!-- SE spike dark face -->
+  <polygon points="507,507  454,438  448,452" fill="#b84018" style="fill:rgb(184, 64, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- SE spike bright face -->
+  <polygon points="507,507  438,454  448,452" fill="#e8622a" style="fill:rgb(232, 98, 42);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- SW spike: tip=(173,507)
+    base-center along SW at 150: (234,446)
+    axis SW=(-1,1)/√2, perp=(-1,-1)/√2
+    wing A: (234-8, 446-8)=(226,438)
+    wing B: (234+8, 446+8)=(242,454)
+  -->
+  <!-- SW spike dark face -->
+  <polygon points="173,507  242,454  236,440" fill="#b84018" style="fill:rgb(184, 64, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- SW spike bright face -->
+  <polygon points="173,507  226,438  236,440" fill="#e8622a" style="fill:rgb(232, 98, 42);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       KNOBS — 8 small rotated diamonds at r=196
+       Placed between each pair of spikes (at 22.5° offsets)
+       Angles: 22.5°, 67.5°, 112.5°, 157.5°, 202.5°, 247.5°, 292.5°, 337.5°
+       r=196, size half=10
+
+       (x,y) = (340 + 196·cos(a), 340 + 196·sin(a))
+       22.5°:  cos=0.924 sin=0.383 → (521,415) — between E and SE... 
+       
+       Actually looking at image: knobs sit at the 8 inter-spike positions
+       between N and NE, between NE and E, etc.
+       
+       N is at 270°, NE at 315°, E at 0°, SE at 45°, S at 90°, SW at 135°, W at 180°, NW at 225°
+       Midpoints: 292.5°, 337.5°, 22.5°, 67.5°, 112.5°, 157.5°, 202.5°, 247.5°
+       
+       292.5°: cos=-0.383, sin=-0.924 → (340-75,340-181)=(265,159)  ← between W and N
+       337.5°: cos= 0.924, sin=-0.383 → (340+181,340-75)=(521,265)  ← between N and E
+       22.5°:  cos= 0.924, sin= 0.383 → (521,415)  ← between E and SE
+       67.5°:  cos= 0.383, sin= 0.924 → (415,521)  ← between SE and S
+       112.5°: cos=-0.383, sin= 0.924 → (265,521)  ← between S and SW
+       157.5°: cos=-0.924, sin= 0.383 → (159,415)  ← between SW and W
+       202.5°: cos=-0.924, sin=-0.383 → (159,265)  ← between W and NW
+       247.5°: cos=-0.383, sin=-0.924 → (265,159)  ← between NW and N
+       
+       Wait, I need to re-check: looking at the image the knobs are at cardinal+diagonal midpoints
+       but matching what I actually see: they appear between the diagonal spikes and N/S,
+       and also flanking the E/W gold spikes.
+       
+       Let me re-read image: knobs appear at approx:
+       top area: two flanking the N spike at roughly NNE and NNW
+       sides: flanking the E and W spikes  
+       bottom: two flanking the S spike
+       
+       These are at 22.5° increments from cardinal = 22.5°, 67.5°, etc.
+       r=196 for all.
+       
+       Each knob = rotated square (diamond), half-diagonal=10, color=#6a5418 (dark olive)
+  -->
+  
+  <!-- Knob helper: diamond = 4 points NSEW around center, half=10 -->
+  <!-- Between NW and N: angle=292.5° → (265,159) -->
+  <polygon points="265,149  275,159  265,169  255,159" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between N and NE: angle=337.5° → (521,265) — wait recalc
+       337.5° from 0: x=340+196*cos(337.5°)=340+196*0.9239=340+181=521, y=340+196*sin(337.5°)=340+196*(-0.3827)=340-75=265 -->
+  <polygon points="521,255  531,265  521,275  511,265" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between NE and E: angle=22.5° → x=521,y=415 -->
+  <polygon points="521,405  531,415  521,425  511,415" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between E and SE: angle=67.5° → x=415,y=521 -->
+  <polygon points="415,511  425,521  415,531  405,521" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between SE and S: angle=112.5° → x=265,y=521 -->
+  <polygon points="265,511  275,521  265,531  255,521" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between S and SW: angle=157.5° → x=159,y=415 -->
+  <polygon points="159,405  169,415  159,425  149,415" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between SW and W: angle=202.5° → x=159,y=265 -->
+  <polygon points="159,255  169,265  159,275  149,265" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Between W and NW: angle=247.5° → x=265,y=159 -->
+  <polygon points="265,149  275,159  265,169  255,159" fill="#5a4c18" style="fill:rgb(90, 76, 24);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       CENTRAL CORE
+       ══════════════════════════════════════════════════════ -->
+
+  <!-- Glow ring around core -->
+  <circle cx="340" cy="340" r="82" fill="#5a1c0c" opacity="0.6" style="fill:rgb(90, 28, 12);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Core bright red circle -->
+  <circle cx="340" cy="340" r="74" fill="#d04828" style="fill:rgb(208, 72, 40);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Inner highlight ring -->
+  <circle cx="340" cy="340" r="68" fill="none" stroke="#e86040" stroke-width="3" opacity="0.4" style="fill:none;stroke:rgb(232, 96, 64);color:rgb(255, 255, 255);stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Top highlight -->
+  <ellipse cx="332" cy="318" rx="26" ry="14" fill="#e87050" opacity="0.25" style="fill:rgb(232, 112, 80);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.25;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ── 3 white bars ───────────────────────────────────────── -->
+  <!-- Bar 1 (top, full) -->
+  <rect x="310" y="323" width="60" height="8" rx="4" fill="#faf0e8" style="fill:rgb(250, 240, 232);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Bar 2 (middle, full) -->
+  <rect x="310" y="337" width="60" height="8" rx="4" fill="#faf0e8" opacity="0.85" style="fill:rgb(250, 240, 232);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Bar 3 (bottom, short, pinkish) -->
+  <rect x="320" y="351" width="40" height="8" rx="4" fill="#f0a090" opacity="0.8" style="fill:rgb(240, 160, 144);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+</svg>

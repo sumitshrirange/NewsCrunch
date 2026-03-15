@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap");
+
+:root {
+  /* Palette */
+  --ink: #0a0a0b;
+  --paper: #f5f0e8;
+  --cream: #faf7f2;
+  --accent: #c8472a;
+  --accent-dark: #a33520;
+  --gold: #d4a843;
+  --slate: #2c3e50;
+  --muted: #8b8680;
+  --border: #e0d9cf;
+  --card-bg: #ffffff;
+
+  /* Semantic */
+  --positive: #2d8a4e;
+  --negative: #c8472a;
+  --neutral: #5a6e8a;
+
+  /* Shadows */
+  --shadow: 0 2px 20px rgba(10, 10, 11, 0.08);
+  --shadow-lg: 0 8px 40px rgba(10, 10, 11, 0.14);
+
+  /* Typography */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "DM Mono", "Courier New", monospace;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+}

@@ -1,0 +1,271 @@
+.page {
+  padding: 40px 24px 80px;
+  max-width: 860px;
+}
+.backLink {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 28px;
+  font-family: var(--font-mono);
+}
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+.breadcrumb span:last-child {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.heroThumb {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background: var(--cream);
+}
+.heroThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thumbOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(245, 240, 232, 0.6) 100%
+  );
+}
+
+.header {
+  padding: 36px 40px 32px;
+  border-bottom: 1px solid var(--border);
+  background: var(--cream);
+}
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 4vw, 36px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+.subline {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.summaryBlock,
+.keyPoints,
+.metaGrid,
+.urlBlock {
+  padding: 32px 40px;
+  border-bottom: 1px solid var(--border);
+}
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.summaryBlock {
+  background: none;
+}
+.summaryBlock::before {
+  display: none;
+}
+.summaryText {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+/* Override — add left accent */
+.summaryBlock {
+  background: var(--cream);
+  border-left: 4px solid var(--accent);
+  margin: 0;
+  padding: 24px 32px;
+  border-radius: 0;
+}
+
+.kpList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+}
+.kpList li {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  font-size: 15px;
+  color: var(--slate);
+  line-height: 1.6;
+}
+.kpNum {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+  padding-top: 3px;
+  min-width: 24px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+}
+.metaItem {
+}
+.metaLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.metaValue {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.urlLink {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+  line-height: 1.5;
+  transition: opacity var(--transition);
+}
+.urlLink:hover {
+  opacity: 0.7;
+}
+
+.actions {
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btnPrimary {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 22px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background var(--transition);
+}
+.btnPrimary:hover {
+  background: var(--accent-dark);
+}
+.btnCopy {
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  padding: 11px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+.btnCopy:hover {
+  opacity: 0.8;
+}
+.btnGhost {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+.btnGhost:hover {
+  border-color: var(--ink);
+}
+.btnDelete {
+  background: none;
+  border: 1.5px solid #fcc;
+  color: var(--negative);
+  padding: 11px 18px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-left: auto;
+}
+.btnDelete:hover {
+  background: #fdecea;
+}
+
+@media (max-width: 640px) {
+  .header,
+  .summaryBlock,
+  .keyPoints,
+  .metaGrid,
+  .urlBlock,
+  .actions {
+    padding: 24px 20px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .btnDelete {
+    margin-left: 0;
+  }
+}
