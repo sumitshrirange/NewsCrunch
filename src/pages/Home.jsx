@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { useFeed } from "../hooks/useFeed";
 import { useSummarize } from "../hooks/useSummarize";
@@ -15,6 +15,23 @@ const Home = () => {
 
   const [urlInput, setUrlInput] = useState("");
   const [urlError, setUrlError] = useState("");
+
+  const [placeholder, setPlaceholder] = useState("");
+
+  useEffect(() => {
+    const updatePlaceholder = () => {
+      if (window.innerWidth <= 640) {
+        setPlaceholder("https://bbc.com/news/…");
+      } else {
+        setPlaceholder("https://bbc.com/news/article…");
+      }
+    };
+
+    updatePlaceholder();
+    window.addEventListener("resize", updatePlaceholder);
+
+    return () => window.removeEventListener("resize", updatePlaceholder);
+  }, []);
 
   /* ── Summarize from URL bar ─────────────────── */
   const handleUrlSubmit = async (e) => {
@@ -74,7 +91,7 @@ const Home = () => {
                     type="url"
                     value={urlInput}
                     onChange={(e) => setUrlInput(e.target.value)}
-                    placeholder="https://bbc.com/news/article…"
+                    placeholder={placeholder}
                     className={styles.urlInput}
                     disabled={summarize.loading}
                   />
