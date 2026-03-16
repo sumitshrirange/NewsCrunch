@@ -158,8 +158,6 @@
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 24px;
 }
-.metaItem {
-}
 .metaLabel {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -261,6 +259,14 @@
   .urlBlock,
   .actions {
     padding: 24px 20px;
+  }
+  .heroThumb {
+    height: 250px;
+  }
+  .metaGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .title {
     font-size: 22px;

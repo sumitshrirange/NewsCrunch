@@ -204,4 +204,9 @@
     align-items: flex-start;
     gap: 12px;
   }
+  .navGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
