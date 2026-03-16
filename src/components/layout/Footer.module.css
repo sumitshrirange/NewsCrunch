@@ -199,18 +199,9 @@
   .inner {
     padding: 40px 16px 28px;
   }
-  .navGrid {
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-  }
   .bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-  }
-}
-@media (max-width: 400px) {
-  .navGrid {
-    grid-template-columns: 1fr;
   }
 }

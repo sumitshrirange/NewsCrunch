@@ -190,3 +190,9 @@
 .btnDelete:hover {
   background: #fdecea;
 }
+
+@media (max-width: 640px) {
+  .points {
+    display: none;
+  }
+}

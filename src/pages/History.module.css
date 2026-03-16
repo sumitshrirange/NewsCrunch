@@ -74,8 +74,15 @@
 .filter {
   display: flex;
   gap: 8px;
-  flex-wrap: wrap;
   margin-bottom: 32px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pills::-webkit-scrollbar {
+  display: none;
 }
 .catBtn {
   background: #fff;

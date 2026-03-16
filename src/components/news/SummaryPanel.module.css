@@ -29,6 +29,12 @@
   position: relative;
   box-shadow: 0 20px 60px rgba(10, 10, 11, 0.3);
   animation: slideUp 0.22s ease;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pills::-webkit-scrollbar {
+  display: none;
 }
 @keyframes slideUp {
   from {
@@ -45,7 +51,7 @@
   position: sticky;
   top: 16px;
   float: right;
-  margin: 16px 16px 0 0;
+  margin-right: 16px;
   background: var(--cream);
   border: 1px solid var(--border);
   border-radius: 50%;
@@ -195,7 +201,7 @@
 
 @media (max-width: 640px) {
   .overlay {
-    padding: 0;
+    padding: 0 16px;
     align-items: flex-end;
   }
   .panel {

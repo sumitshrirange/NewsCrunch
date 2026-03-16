@@ -91,7 +91,14 @@
 .pills {
   display: flex;
   gap: 8px;
-  flex-wrap: wrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pills::-webkit-scrollbar {
+  display: none;
 }
 .pill {
   background: #fff;

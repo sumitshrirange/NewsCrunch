@@ -136,7 +136,7 @@ const Footer = () => {
               <span className={styles.statusDot} />
               All system is up-to-date
             </span>
-            <span className={styles.version}>v1.0.0</span>
+            <span className={styles.version}>v1.0.1</span>
           </div>
         </div>
       </div>
