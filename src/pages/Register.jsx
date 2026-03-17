@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { googleAuth, register as apiRegister } from "../services/api";
 import styles from "./Auth.module.css";
+import Spinner from "../components/common/Spinner";
 
 const Register = () => {
   const { login, user } = useAuth();
@@ -138,11 +139,7 @@ const Register = () => {
           <div className={styles.gWrap}>
             {gLoad ? (
               <div className={styles.gLoading}>
-                <span
-                  className="spinner-sm spinner-dark"
-                  style={{ display: "inline-block" }}
-                />{" "}
-                Signing up…
+                <Spinner />
               </div>
             ) : (
               <div id="g-btn-reg" />

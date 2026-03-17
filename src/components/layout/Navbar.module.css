@@ -83,6 +83,9 @@
   color: var(--gold) !important;
   background: rgba(212, 168, 67, 0.12) !important;
 }
+.navLinkOnboarding {
+  text-align: center;
+}
 
 /* Right */
 .right {

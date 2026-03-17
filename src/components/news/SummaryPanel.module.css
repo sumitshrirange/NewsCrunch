@@ -206,6 +206,10 @@
   }
   .panel {
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-    max-height: 92vh;
+    max-height: 75vh;
+    margin-bottom: 75px;
+  }
+  .thumb {
+    height: 180px;
   }
 }

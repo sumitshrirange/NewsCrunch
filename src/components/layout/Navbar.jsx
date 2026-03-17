@@ -124,7 +124,10 @@ const Navbar = () => {
               </div>
             ) : (
               <div className={styles.authLinks}>
-                <Link to="/login" className={styles.navLink}>
+                <Link
+                  to="/login"
+                  className={`${styles.navLink} ${styles.navLinkOnboarding}`}
+                >
                   Sign In
                 </Link>
                 <Link to="/register" className={styles.navCta}>

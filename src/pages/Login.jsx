@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { googleAuth, login as apiLogin } from "../services/api";
 import styles from "./Auth.module.css";
+import Spinner from "../components/common/Spinner";
 
 const Login = () => {
   const { login, user } = useAuth();
@@ -106,11 +107,7 @@ const Login = () => {
           <div className={styles.gWrap}>
             {gLoad ? (
               <div className={styles.gLoading}>
-                <span
-                  className="spinner-sm spinner-dark"
-                  style={{ display: "inline-block" }}
-                />{" "}
-                Signing in with Google…
+                <Spinner />
               </div>
             ) : (
               <div id="g-btn" />
