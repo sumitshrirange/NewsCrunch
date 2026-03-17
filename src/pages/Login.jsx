@@ -105,13 +105,8 @@ const Login = () => {
           {error && <div className={styles.errorBox}>{error}</div>}
 
           <div className={styles.gWrap}>
-            {gLoad ? (
-              <div className={styles.gLoading}>
-                <Spinner />
-              </div>
-            ) : (
-              <div id="g-btn" />
-            )}
+            <div id="g-btn" />
+            {gLoad && <p>Signing...</p>}
           </div>
 
           <div className={styles.divider}>

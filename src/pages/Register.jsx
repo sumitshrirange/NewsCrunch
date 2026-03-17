@@ -137,13 +137,8 @@ const Register = () => {
           {error && <div className={styles.errorBox}>{error}</div>}
 
           <div className={styles.gWrap}>
-            {gLoad ? (
-              <div className={styles.gLoading}>
-                <Spinner />
-              </div>
-            ) : (
-              <div id="g-btn-reg" />
-            )}
+            <div id="g-btn-reg" />
+            {gLoad && <p>Signing...</p>}
           </div>
 
           <div className={styles.divider}>
