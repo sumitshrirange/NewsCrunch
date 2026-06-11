@@ -146,7 +146,7 @@ npm install
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in the server directory:
+Create a `.env` file in the directory:
 
 | Variable                | Description                   |
 | ----------------------- | ----------------------------- |
